@@ -40,3 +40,5 @@ plans
 backends
 .terraform
 .terraform.lock.hcl
+
+*.log

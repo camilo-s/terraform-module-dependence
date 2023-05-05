@@ -6,8 +6,8 @@ resource "azurerm_storage_account" "this" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_management_lock" "this" {
-  name       = "${azurerm_storage_account.this.name}-no-delete"
-  scope      = azurerm_storage_account.this.id
-  lock_level = "CanNotDelete"
-}
+# resource "azurerm_management_lock" "this" {
+#   name       = "${azurerm_storage_account.this.name}-no-delete"
+#   scope      = azurerm_storage_account.this.id
+#   lock_level = "CanNotDelete"
+# }
